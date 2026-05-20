@@ -52,6 +52,11 @@ export const skills = [
     description: "Experiences tuned for mobile, PC, and console.",
     icon: "devices",
   },
+  {
+    title: "UI-UX Scripting",
+    description: "Custom UI-UX scripting for seamless gameplay.",
+    icon: "ui",
+  },
 ] as const;
 
 export const featuredProjects = [
@@ -59,7 +64,8 @@ export const featuredProjects = [
     id: "miners",
     name: "Miners",
     /** Pon la foto en: public/projects/miners.png */
-    image: "/projects/miners.png",
+    image: "/projects/miners2.png",
+    robloxUrl: "https://www.roblox.com/games/116644237616305/Miners",
     description:
       "A realistic and immersive mining experience featuring advanced ore generation systems, custom Blender-made tools, and high-quality Moon Animator animations.",
     featured: true,
@@ -70,7 +76,8 @@ export const featuredProjects = [
     id: "toy-factory",
     name: "My Toy Factory",
     /** Pon la foto en: public/projects/toy-factory.png */
-    image: "/projects/toy-factory.png",
+    image: "/projects/toy-factory2.png",
+    robloxUrl: "https://www.roblox.com/games/85612805654692/My-Toy-Factory-Tycoon",
     description:
       "A fully functional factory tycoon with automated production systems, custom assets, animations, and optimized scripting architecture.",
     featured: true,
@@ -83,7 +90,7 @@ export const placeholderProjects = [
   { name: "Hamster Ball", image: "/projects/Hamster-Ball.png" },
   { name: "Rock Idle Mining", image: "/projects/Rock-Idle-Mining.png" },
   { name: "Brainrot", image: "/projects/the-brainrot.png" },
-  { name: "RNG",image: "/projects/crystal-realms.png" },
+  { name: "RNG", image: "/projects/balloon.png" },
   { name: "Mech Wars", image: "/projects/mech-wars.png" },
   { name: "Ocean Odyssey", image: "/projects/ocean-odyssey.png" },
   { name: "Pixel Parkour", image: "/projects/pixel-parkour.png" },

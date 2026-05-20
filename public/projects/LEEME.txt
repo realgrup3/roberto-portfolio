@@ -10,7 +10,7 @@ Proyectos principales (obligatorio si quieres foto):
 
 Otros proyectos (opcional):
 
-  neon-district.png
+  ballon.png
   skybound.png
   vault-heist.png
   crystal-realms.png

@@ -115,10 +115,15 @@ export function Projects() {
                 <p className="mt-3 text-sm leading-relaxed text-zinc-400 md:text-base">
                   {project.description}
                 </p>
-                <motion.div
-                  className="mt-6 flex items-center gap-2 text-sm font-medium text-rose-400/80 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+                <motion.a
+                  href={project.robloxUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  whileHover={{ x: 4 }}
+                  className="mt-6 inline-flex items-center gap-2 text-sm font-medium text-rose-400/90 transition-colors hover:text-rose-300"
+                  aria-label={`Play ${project.name} on Roblox`}
                 >
-                  <span>View Details</span>
+                  <span>Play on Roblox</span>
                   <svg
                     className="h-4 w-4 transition-transform group-hover:translate-x-1"
                     fill="none"
@@ -132,7 +137,7 @@ export function Projects() {
                       d="M17 8l4 4m0 0l-4 4m4-4H3"
                     />
                   </svg>
-                </motion.div>
+                </motion.a>
               </div>
             </motion.article>
           ))}

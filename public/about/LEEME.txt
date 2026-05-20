@@ -5,7 +5,8 @@ Carpeta: C:\Pagina Web\mi-web\public\about\
 
 Pon tu archivo con este nombre exacto:
 
-  roberto.png
+roberto.png
+
 
 (Solo copia y pega tu PNG aqui y renombralo a roberto.png)
 
