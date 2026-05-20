@@ -1,0 +1,12 @@
+COLOCA AQUI TU FOTO DE PERFIL (PNG)
+====================================
+
+Carpeta: C:\Pagina Web\mi-web\public\about\
+
+Pon tu archivo con este nombre exacto:
+
+  roberto.png
+
+(Solo copia y pega tu PNG aqui y renombralo a roberto.png)
+
+Luego recarga la pagina en el navegador (F5).

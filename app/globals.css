@@ -1,0 +1,132 @@
+@import "tailwindcss";
+
+:root {
+  --background: #080506;
+  --foreground: #e4e4e7;
+  --accent: #f43f5e;
+  --accent-deep: #dc2626;
+  --surface: #120a0c;
+  --surface-elevated: #1a1012;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-inter);
+  --font-display: var(--font-syne);
+  --font-mono: var(--font-jetbrains);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-inter), system-ui, sans-serif;
+  overflow-x: hidden;
+}
+
+::selection {
+  background: rgba(244, 63, 94, 0.3);
+  color: #fff;
+}
+
+/* Glassmorphism */
+.glass-card {
+  background: rgba(14, 8, 10, 0.65);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  box-shadow:
+    0 4px 24px rgba(0, 0, 0, 0.4),
+    inset 0 1px 0 rgba(255, 255, 255, 0.04);
+}
+
+/* Skill cards */
+.skill-card {
+  background: linear-gradient(
+    145deg,
+    rgba(22, 12, 14, 0.9) 0%,
+    rgba(10, 6, 8, 0.95) 100%
+  );
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  transition:
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.skill-card:hover {
+  border-color: rgba(244, 63, 94, 0.25);
+  box-shadow:
+    0 8px 32px rgba(0, 0, 0, 0.4),
+    0 0 40px rgba(244, 63, 94, 0.08);
+}
+
+/* Project cards */
+.project-card {
+  background: rgba(14, 8, 10, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  transition:
+    border-color 0.4s ease,
+    box-shadow 0.4s ease;
+}
+
+.project-card:hover {
+  border-color: rgba(244, 63, 94, 0.2);
+  box-shadow:
+    0 20px 60px rgba(0, 0, 0, 0.5),
+    0 0 60px rgba(244, 63, 94, 0.1);
+}
+
+/* Placeholder project thumbnails */
+.placeholder-card {
+  background: rgba(14, 8, 10, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  transition:
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.placeholder-card:hover {
+  border-color: rgba(244, 63, 94, 0.2);
+  box-shadow: 0 8px 24px rgba(244, 63, 94, 0.08);
+}
+
+/* Subtle grid overlay */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(244, 63, 94, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(244, 63, 94, 0.03) 1px, transparent 1px);
+  background-size: 64px 64px;
+  pointer-events: none;
+  z-index: 0;
+  mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, black 20%, transparent 70%);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #080506;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(244, 63, 94, 0.25);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(244, 63, 94, 0.45);
+}

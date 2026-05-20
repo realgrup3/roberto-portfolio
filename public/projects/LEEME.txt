@@ -1,0 +1,27 @@
+COLOCA AQUI LAS FOTOS DE TUS PROYECTOS (PNG)
+============================================
+
+Carpeta: C:\Pagina Web\mi-web\public\projects\
+
+Proyectos principales (obligatorio si quieres foto):
+
+  miners.png
+  toy-factory.png
+
+Otros proyectos (opcional):
+
+  neon-district.png
+  skybound.png
+  vault-heist.png
+  crystal-realms.png
+  mech-wars.png
+  ocean-odyssey.png
+  pixel-parkour.png
+  starforge-tycoon.png
+
+Como hacerlo:
+  1. Copia tus PNG a esta carpeta
+  2. Clic derecho -> Cambiar nombre -> usa los nombres de arriba
+  3. Recarga la web (F5)
+
+Si falta un PNG, se muestra la letra del proyecto.
